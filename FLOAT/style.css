@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.topbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topbar ul{
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.topbar ul li{
+  float: left;
+  width: 25%;
+  border: 1px solid aquamarine;
+  text-align: center;
+  background-color: brown;
+
+}
+
+.topbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  font-size: 18px;
+
+}
+
+.topbar ul li a:hover{
+  background-color: rgb(125, 43, 3);
+}
+
+/* body{
+  padding-top: 40px;
+} */
+
+.redd {
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+}
+
+.redd aside{
+  float: left;
+  width: 30px;
+  background-color: blueviolet;
+}
+
+.redd aside ul{
+list-style-type: none;
+}
+
+.redd aside ul li{
+  border: 1px solid black;
+}
+
+
+.redd aside ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  font-size: 18px;
+
+}
+.redd section{
+
+}
+
+.topbar li:nth(4):hover .dropdown{
+  display: block;
+}
