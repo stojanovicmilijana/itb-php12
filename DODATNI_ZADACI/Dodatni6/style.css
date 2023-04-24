@@ -1,0 +1,45 @@
+
+
+
+
+.box{
+  width: 500px;
+  height: 500px;
+  display: block;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+div{
+  margin-bottom: 10px;
+}
+
+input{
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+label{
+  margin-bottom: 5px;
+  color: rgb(75, 74, 74);
+}
+
+.button{
+  background: green;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 5px #424242;
+  border: none;
+}
+
+#cardnumber{
+  background-image: url("cccard.jpg");
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 5px;
+}
+#cardnumber:focus{
+  background: none;
+}

@@ -1,0 +1,43 @@
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+tr{
+  border: 1px solid black;
+  height: 30px;
+
+}
+
+td{
+  border: 1px solid black;
+}
+th{
+  background-color: rgb(75, 226, 253);
+  color: red;
+}
+
+.orange{
+  background-color: orangered;
+  text-align: center;
+}
+
+.drugi{
+  font-style: italic;
+  background: lightgreen;
+  text-align: center;
+}
+
+.html{
+  color: lightblue;
+}
+
+td.project{
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  border: none;
+}

@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+table{
+  width: 70%;
+  height: 70px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+table, tr, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}

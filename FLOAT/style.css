@@ -1,28 +1,29 @@
-*{
+/* HORIZONTALNI MENI */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.topbar{
+.topbar {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
-.topbar ul{
+.topbar ul {
   overflow: hidden;
   list-style-type: none;
 }
 
-.topbar ul li{
+.topbar ul li {
   float: left;
   width: 25%;
   border: 1px solid aquamarine;
   text-align: center;
   background-color: brown;
-
 }
 
 .topbar ul li a {
@@ -31,50 +32,65 @@
   padding: 10px 0;
   display: block;
   font-size: 18px;
-
 }
 
-.topbar ul li a:hover{
-  background-color: rgb(125, 43, 3);
+.topbar ul li a:hover {
+  background-color: chocolate;
 }
 
 /* body{
   padding-top: 40px;
 } */
+/* section{
+  position: relative;
+  top: 50px;
+} */
 
-.redd {
+.red {
   position: relative;
   top: 50px;
   overflow: hidden;
 }
 
-.redd aside{
+.red aside {
   float: left;
-  width: 30px;
+  width: 30%;
   background-color: blueviolet;
 }
 
-.redd aside ul{
-list-style-type: none;
+.red aside ul {
+  list-style-type: none;
 }
 
-.redd aside ul li{
-  border: 1px solid black;
+.red aside ul li {
+  border: 1px solid aquamarine;
+  text-align: center;
+  background-color: darkgoldenrod;
 }
 
-
-.redd aside ul li a{
+.red aside ul li a {
   color: white;
   text-decoration: none;
   padding: 10px 0;
   display: block;
   font-size: 18px;
-
 }
-.redd section{
-
+.red aside ul li a:hover {
+  background-color: darkorange;
 }
 
-.topbar li:nth(4):hover .dropdown{
+.red section {
+  float: left;
+  width: 70%;
+  background-color: burlywood;
+  padding: 20px;
+}
+
+/* Padajuci meni */
+ .dropdown{
+  display: none;
+ }
+
+.topbar li:nth-child(4):hover .dropdown {
   display: block;
 }

@@ -1,0 +1,45 @@
+  /* div{
+    background-color: blue;
+  }
+
+
+div.green{
+  background-color: green;
+}
+
+span{
+  background-color: yellow;
+}
+
+
+span.sivi{
+  background-color: grey;
+}
+
+#treci{
+  color: white;
+  background-color: red;
+} */
+
+
+body div{
+  background-color: blue;
+}
+
+div>div{
+  background-color: green;
+}
+div>span{
+  background-color: yellow;
+}
+div+span{
+  background-color: grey;
+}
+#treci {
+  background-color: red;
+  color: white;
+}
+
+#treci>span{
+  background-color: orange;
+}

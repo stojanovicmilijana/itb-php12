@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+}
+
+nav ul{
+  padding-right: 10px;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+nav li{
+  
+  float: left;
+  background-color: black;
+  padding-right: 30px;
+  padding-left: 16px;
+  text-align: center;
+}
+
+nav li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px 8px;
+  color: aliceblue;
+  text-transform: uppercase;
+ 
+}
+
+li a:hover{
+  background-color: aqua;
+}
+

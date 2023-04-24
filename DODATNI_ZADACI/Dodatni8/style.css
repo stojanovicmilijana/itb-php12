@@ -1,0 +1,18 @@
+.sirina{
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.tekst{
+  height: 150px;
+  overflow-y: scroll;
+
+}
+
+img{
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  border: 1px dotted red;
+}
