@@ -1,4 +1,4 @@
-/* HORIZONTALNI MENI */
+/* Horizontalni meni */
 
 * {
   margin: 0;
@@ -38,17 +38,17 @@
   background-color: chocolate;
 }
 
-/* body{
+/*
+body {
   padding-top: 40px;
-} */
-/* section{
-  position: relative;
-  top: 50px;
-} */
+}
+*/
+
+/* Horizontalni meni */
 
 .red {
   position: relative;
-  top: 50px;
+  top: 42px;
   overflow: hidden;
 }
 
@@ -75,8 +75,9 @@
   display: block;
   font-size: 18px;
 }
+
 .red aside ul li a:hover {
-  background-color: darkorange;
+  background-color: darkorange
 }
 
 .red section {
@@ -86,10 +87,12 @@
   padding: 20px;
 }
 
+
 /* Padajuci meni */
- .dropdown{
+
+.dropdown {
   display: none;
- }
+}
 
 .topbar li:nth-child(4):hover .dropdown {
   display: block;
