@@ -1,11 +1,14 @@
 <?php
 
-// . Sa niškog aerodroma u toku jednog dana polaze letovi ka različitim gradovima. Dat je asocijativni niz u kojem su ključevi destinacije letova, a vrednosti broj putnika na svakom letu.
+// . Sa niškog aerodroma u toku jednog dana polaze letovi ka različitim gradovima. Dat je asocijativni niz u kojem su ključevi destinacije letova,
+// a vrednosti broj putnika na svakom letu.
 // Kreirati niz $letovi po uslovima zadatka.
-// Napisati funkciju maxBrojPutnika($letovi) kojoj se prosleđuje niz letova, a funkcija vraća maksimalan broj putnika na nekom od letova.
+// Napisati funkciju maxBrojPutnika($letovi) kojoj se prosleđuje niz letova, 
+//a funkcija vraća maksimalan broj putnika na nekom od letova.
 
 
 $letovi = [
+  
 'Rim' => 350,
 'Barselona' => 280,
 'Budimpesta' => 120,
@@ -143,6 +146,7 @@ function prosecnaTemp($dan)
 }
 echo "Prosecna temperatura za dan " .$dan["datum"] . "je: " . prosecnaTemp($dan);
 echo "<hr>";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Napisati f-ju koja prebrojava i vraca koliko merenja je bilo sa natprosecnom temperaturom
 
 function brojNatprosecnoMerenja($dan)
@@ -182,9 +186,126 @@ $v1= 7;
 $v2 = 15;
 
 
-echo "Broj merenja na dan " . $dan["datum"] . " izmedju vrednosti $v1 i $v2 jednak je: " .brojMerenjaIzmedju($dan, $min, $max);
+// echo "Broj merenja na dan " . $dan["datum"] . " izmedju vrednosti $v1 i $v2 jednak je: " .brojMerenjaIzmedju($dan, $min, $max);
 
 echo "<hr>";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Zadatak 
+// Dat je niz u kojem su smešteni odgovarajući letovi koji polaze sa nekog aerodroma u toku jednog dana. Svaki element tog niza odgovara jednom letu, pri čemu se za svaki let pamti destinacija (grad u koji avion sleće), država u kojoj se taj grad nalazi, kao i vreme poletanja aviona sa aerodroma (string u formatu “hh:mm”). U ovom zadatku, može se desiti da imamo više letova ka istoj destinaciji.
+//Zadatak 8
+// Kreirati niz $letovi, pri čemu je svaki element tog niza jedan asocijativni niz. Svaki od tih asocijativnih niza mora od ključeva da ima “dest” (destinaciju), “country” (zemlju te destinacije), kao i “time” (vreme sletanja).
+
+
+$letovi =array(
+ array(
+     "dest" => "Roma ",
+     "county" => "Italia",
+     "time" => "16:30"
+ ),
+array(
+     "dest" => "Paris",
+     "country" => "Francuska",
+     "time" => "15:20"
+
+),
+ array (
+     "dest" => "Vienna",
+     "country" => "Austria",
+     "time" => "10:40"
+ ),
+ array(
+  "dest" => "Paris",
+  "country" => "Francuska",
+  "time" => "09:20"
+  
+ )
+);
+function ispisSvihLetova($letovi){
+    foreach ($letovi as $let){
+      $destinacija = $let["dest"];
+      $zemlja = $let ["country"];
+      $vreme = $let ["time"];
+      echo $destinacija, $zemlja;
+    }
+} 
+
+//Zadatak 9
+// Napisati funkciju brojLetovaZaZemlju($letovi, $zemlja) kojoj se prosleđuju niz letova, kao i zemlja, a funkcija vraća broj letova do date zemlje.
+
+function brojLetovaZaZemlju($letovi, $zemlja){
+  $broj = 0;
+  foreach($letovi as $let){
+      if($let["country"] == $zemlja){
+          $broj++;
+      }
+  }
+  return $broj;
+  }
+ echo brojLetovaZaZemlju($letovi, "Austria");
+
+//Zadatak 10
+// Napisati funkciju visePrePodne($letovi) kojoj se prosleđuje niz letova, a određuje da li je bilo više letova pre podne ili posle podne. Ukoliko je bilo više letova pre podne, vratiti true, a u suportnom, vratiti false.
+
+//Isppisi sve letove ali plavom bojom ako lete pre podne odnosno ljub ako lete popodbbe
+
+function ispisSvihLetovaBoja($letovi){
+  foreach ($letovi as $let){
+    $destinacija = $let["dest"];
+    $zemlja = $let ["country"];
+    $vreme = $let ["time"];
+    $vremeInt = (int) substr($vreme, 0, 2);
+    if($vremeInt < 12)
+    {
+          echo "<p style='color:blue'>";
+    }else{
+      echo "<p style='color:blue'>";
+    }
+    echo "Destinacija : $destinacija, Drzava: $zemlja, Vreme polaska: $vreme </p>";
+
+  }
+} 
+ispisSvihLetovaBoja($letovi);
+
+//13 
+function trazeneDestinacije($letovi)
+{
+  //$polasci = array ("Paris => 1, "Madrid" => 2, "Barselona" => 1);
+  $polasci = array();
+  foreach ($letovi as $let)
+  {
+    
+  }
+}
+//14
+function trazeneDestinacijee($letovi){
+  $zeljenedest = [];
+  foreach($letovi as $let){
+      $br = 0;
+      $mesto = $let["dest"];
+      foreach($letovi as $let){
+          $mesto1 = $let["dest"];
+          if($mesto == $mesto1){
+              $br++;
+          }
+      }
+      if($br > 1){
+          $zeljenedest[$mesto]=$br;
+      }
+  }
+  foreach($zeljenedest as $des=>$br){
+      echo "$des ";
+  }
+}
+echo "<p>Zeljene dest su: </p>";
+trazeneDestinacijee($letovi);
+
+
+
+
+
+
+
+
 
 
 

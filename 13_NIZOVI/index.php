@@ -380,4 +380,8 @@ for($i=0; $i<count($imena); $i++)
 } 
 echo "<p>Broj stringova koji pocinju sa slovo 'a' je $brojpocinjeA</p>";
 
+
+
+
+
 ?>

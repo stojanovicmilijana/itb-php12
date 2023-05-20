@@ -87,9 +87,19 @@ ispisImena($p, $i);
 // require();
 
 
-//Zadatak 1
+//Zadatak 2
+//Napisati funkciju maks2 koja vraća veći od dva prosleđena realna broja. Zatim napisati funkciju maks4 koja vraća najveći od četiri realna broja.
+// Pozvati funkcije i testirati njihov rad.
 
-
+function maks2($n,$m){
+  if($n>$m){
+     return $n;
+  } else{
+    return $m;
+  }
+}
+echo maks2(10,6);
+echo "<hr>";
 
 
 
