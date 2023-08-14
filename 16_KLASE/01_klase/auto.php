@@ -31,7 +31,8 @@ $a1 = new Auto ();
 $a1->marka = "Opel";
 $a1->boja = "plava";
 $a1->imaKrov = false;
-$a1->kubikaza = 1600;
+//mozemo i da dodajemo polja i vrednosti, ali moramo da pazimo na case sensitive
+//$a1->kubikaza = 1600;
 
 // var_dump($a1);
 

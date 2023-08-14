@@ -17,7 +17,7 @@ class Pacijent
     function Kritican()
     {
         $bmi = $this->Bmi();
-        return $bmi < 15 || $bmi > 40;
+        return $bmi < 15 || $bmi > 40; // ne moze da ima nenegativnu vrednost
     }
 }
 

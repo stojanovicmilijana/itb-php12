@@ -11,6 +11,7 @@ class Auto
         //U klasi Automobil, dodati tri metode za postavljanje odgovarajućih polja.
 
         // GETERI: vracaju vrednosti polja
+              
 
         public function getMarka()
         {
@@ -59,7 +60,7 @@ class Auto
         }
 
 
-
+ 
 
         private function sviraj()
         {
@@ -91,6 +92,8 @@ class Auto
     $a1 = new Auto();
 
     // $a1->marka = "Audi";  // NIJE MOGUCE: polje marka je privatno polje
+    // $a1->getMarka (); //  ovo radi: poziva se geter za polje marka , geter vrati vrednost polja, pa onda mi ispisemo tu vrednost
+
     $a1->setMarka("Audi");   // OVO RADI: poziva seter, a seter kontrolise kako ce da podesi vrednost
                              // odgovarajuceg polja
     $a1->setImaKrov("true");
@@ -113,4 +116,5 @@ class Auto
                             // pa onda mi ispisemo tu vrednost
 
     $a1->ispis();
+    
 ?>
