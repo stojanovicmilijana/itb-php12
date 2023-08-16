@@ -153,5 +153,15 @@ function maxProsekN($knjige){
 echo maxProsekN($knjige);
 echo '<br>';
 
+$k6 = new Knjiga();
+$k6 -> $brojStrana = 10;
+$k6 -> $cena = 100;
+$knjige[] = $k6; /// dodavanje jos jednog elementa u niz objekata
+
+
+
+
+
+
 
 ?>
