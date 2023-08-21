@@ -35,6 +35,13 @@ class film{
   return $this->godinaIzdanja;
  }
 
+public function stampaj(){
+   echo "<p>Film $this->naslov, reziser: $this->reziser, godina: $this->godinaIzdanja</p>";
+
+}
+
+
+
 }
 
 
