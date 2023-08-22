@@ -12,19 +12,19 @@ require_once "Film.php";
 require_once "NemiFilm.php";
 
 
-$f1 = new Film ("Lord of the Rings", 2001, "Peter Jackson");
+$f1 = new Film ("Lord of the Rings", 2001, "Peter Jackson", [7, 5.8, 8.7, 10]);
 $f1->stampaj();
 
-$f2 = new Film ("Kill Bill", 2003, "Quentin Tarantino");
+$f2 = new Film ("Kill Bill", 2003, "Quentin Tarantino", [10,9.5, 9.8, 7.5]);
 $f2 ->stampaj();
 
-$f3 = new Film ("Titanik", 1999, "James Cameron");
+$f3 = new Film ("Titanik", 1999, "James Cameron", [7.6, 5.5]);
 $f3->stampaj();
 //////////////niz ovakvih filmova moze se zapisati i kao asoc.niz, ali sa nizom objekata dolazimo do razvrstavanja klasa (zapravo povezujemo iste podatke, ne moze se menjati tipa nazivi kljuceva kao kod asoc.niz)
-$n1 = ["naslov"=>"Lord of the Rings", "godina"=>2001, "reziser"=>"Peter Jackson"];
+/* $n1 = ["naslov"=>"Lord of the Rings", "godina"=>2001, "reziser"=>"Peter Jackson"];
 $n2 = ["naslov"=>"Lord of the Rings", "godina"=>2001, "reziser"=>"Peter Jackson"];
 $n3 = ["naslov"=>"Lord of the Rings", "godina"=>2001, "reziser"=>"Peter Jackson"];
-$filmoviTemp = [$n1, $n2, $n3]; // ovde smo uveli medjupromenljivu n cisto kao primer
+$filmoviTemp = [$n1, $n2, $n3]; // ovde smo uveli medjupromenljivu n cisto kao primer */
 
 
 //prolazak kroz nizove objekata i stampa istih, kao i pristup pojedinacnom polju godina:
@@ -36,5 +36,23 @@ foreach ($filmovi as $film){
    echo $film->stampaj();
 }
 
+function prosecnaOcena($films)
+{
+   $zbir = 0;
+   foreach($films as $f)
+   {
+      $zbir += $f->prosek();
+   }  
+   $n = count($films);
+   if($n > 0 ){
+      return $zbir / $n;
+   }
+   else {
+      return 0;
+   }
+}
+
+$prosecna = prosecnaOcena($filmovi);
+echo "Prosecna ocena od svih filmova je $prosecna";
 
 ?>
