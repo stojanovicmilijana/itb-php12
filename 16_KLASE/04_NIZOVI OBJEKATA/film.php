@@ -42,7 +42,7 @@ class film{
   }
 
   public function getOcene(){
-    return this->ocene;
+    return $this->ocene;
 }
 public function stampaj(){
    echo "<p>Film $this->naslov, reziser: $this->reziser, godina: $this->godinaIzdanja, ocene: ".implode(", ",$this->ocene) . ",
@@ -58,8 +58,6 @@ public function prosek(){
   $n = count($this->ocene);
   return ($n>0) ? ($sum / $n) : 0;
 }
-
-
 
 }
 
