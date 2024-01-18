@@ -10,6 +10,7 @@
 //kada pisemo definiciju klase na nekom drugom mestu a hocu u drugom fajlu da je ubacim, zahvevate najvise jedanput da je ubacite
 require_once "Film.php";
 require_once "NemiFilm.php";
+echo "<hr>";
 
 
 $f1 = new Film ("Lord of the Rings", 2001, "Peter Jackson", [7, 5.8, 8.7, 10]);
@@ -20,6 +21,7 @@ $f2 ->stampaj();
 
 $f3 = new Film ("Titanik", 1999, "James Cameron", [7.6, 5.5]);
 $f3->stampaj();
+echo "<hr>";
 //////////////niz ovakvih filmova moze se zapisati i kao asoc.niz, ali sa nizom objekata dolazimo do razvrstavanja klasa (zapravo povezujemo iste podatke, ne moze se menjati tipa nazivi kljuceva kao kod asoc.niz)
 /* $n1 = ["naslov"=>"Lord of the Rings", "godina"=>2001, "reziser"=>"Peter Jackson"];
 $n2 = ["naslov"=>"Lord of the Rings", "godina"=>2001, "reziser"=>"Peter Jackson"];
@@ -35,7 +37,7 @@ foreach ($filmovi as $film){
    echo $film->getGodinaIzdanja();
    echo $film->stampaj();
 }
-
+echo "<hr>";
 
 //Napisati f-ju prosecnaOcena kojoj se prosledjuje niz filmova, a koja odredjuje i vraca prosecnu ocenu svih filmova
 function prosecnaOcena($films)
@@ -58,6 +60,7 @@ function prosecnaOcena($films)
 $prosecna = prosecnaOcena($filmovi);
 echo "Prosecna ocena od svih filmova je $prosecna";
 echo "<br>";
+echo "<hr>";
 ///////////////////////////////////////////////////////////////////////////////////////
 //Napraviti f-ju vekFilmova kojoj se prosledjuje niz filmova i ceo broj, funkcija ispisuje samo one filmove koji su stvoreni u prosledjenom veku
 
@@ -183,6 +186,14 @@ $mo = najmanjaOcena($filmovi);
 
 echo "<p>Najmanja ocena koju je neki film dobio je: $mo</p>";
 echo "<hr>";
+////////////////////////////////
+
+
+
+
+
+
+
 
 
 ?>
