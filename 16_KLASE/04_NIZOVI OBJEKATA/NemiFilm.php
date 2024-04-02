@@ -2,7 +2,7 @@
 
 require_once "Film.php";
 
-class NemiFilm{
+class NemiFilm extends Film{
   //.....
 }
 

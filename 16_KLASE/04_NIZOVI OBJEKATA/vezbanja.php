@@ -188,6 +188,19 @@ echo "<p>Najmanja ocena koju je neki film dobio je: $mo</p>";
 echo "<hr>";
 ////////////////////////////////
 
+// Napisati funkciju najcescaOcena kojoj se prosleđuje niz filmova, a ona vraća ocenu koju su filmovi najčešće dobijali.
+
+
+// Napraviti funkciju iznadOcene kojoj se prosleđuje ocena i niz filmova, a ona vraća niz onih filmova koji su bolje ocenjeni od prosleđene ocene.
+//ovde treba proslediti niz filmova i da se vidi cija je prosecna ocena veca od ocene koja se prosledjuje, jedina zackoljica je niz filmova- ne treba da se vrati jedan film ili da se ispise, nego kako nadjemo jedan takav film mi ga dodajemo u prazan niz prvo,kada se zavrsi vratimo niz, parametar je niz filmova i vracam niz filmova
+
+
+
+
+
+// Napisati funkciju iznadOceneNoviji kojoj se prosleđuje ocena i niz filmova  a koja treba da na ekranu da ispiše sve podatke o najnovijem filmu koji zadovoljava prosleđenu ocenu
+
+
 
 
 

@@ -160,8 +160,4 @@ $knjige[] = $k6; /// dodavanje jos jednog elementa u niz objekata
 
 
 
-
-
-jkjpjl
-
 ?>
