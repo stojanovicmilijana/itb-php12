@@ -1,12 +1,15 @@
 <?php
 
-class Kvadrat {
+ require_once "Oblik.php";
+
+ class Kvadrat extends Oblik{
+
  private $a;
 
 
  public function getA(){
 
-  return $this->a=$a;
+  return $this->a;
 
  }
 
@@ -24,15 +27,16 @@ class Kvadrat {
  }
 
  public function __construct($a){
+  parent::__construct(Oblik::KVADRAT);
   $this->setA($a);
  }
- public function obimKvadrata(){
+ public function obim(){//override
 
   return 4* $this->a;
 
  }
 
- public function povrsinaKvadrata(){
+ public function povrsina(){//override
    return $this->a * $this->a;
  }
 
