@@ -88,3 +88,7 @@ VALUES
 ("Bojana", 2, 39, 0, "Srbija",16),
 ("Dejan", 3, 31, 0, "Crna Gora",3);
 
+INSERT INTO tasks(task_id,title, start_date, due_date,status,description,priority)
+VALUES(1,"Čas iz ITBootcampa",2023-06-02,1,2023-06-02, 1,"Čas iz baza podataka", 1),
+(2, "Šetnja", 2023-06-01, 2023-06-01, 1, "Lagana šetnja", 0),
+(3, "Uradi domaći zadatak", 2023-06-03, NULL,1, "Domaci zadatak iz SQL-a", 1);
